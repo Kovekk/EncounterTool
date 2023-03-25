@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Monster Encounter Creator</title>
+  <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="body-grid">
+  <div id="sortFilter">
+<form>
+  <h2 class="center">Sort</h2>  
+  <input type="radio" id="sort_cr" name="sort" value="sort_cr" checked>
+  <label for="sort_cr">CR</label><br>
+  
+  <input type="radio" id="sort_name" name="sort" value="sort_name">
+  <label for="sort_name">Name</label><br>
+</form>
+
+
+<!-- <form>
+  <h2 class="center">Order</h2>
+  <input type="radio" id="sort_asc" name="sort_by" value="sort_asc">
+  <label for="sort_asc">Asc</label><br>
+  
+  <input type="radio" id="sort_desc" name="sort_by" value="sort_desc">
+  <label for="sort_desc">Desc</label><br>
+</form> -->
+  
+    
+<form>
+  <h2 class="center">Filter</h2>
+  <input type="button" id="selectAllFilter" value="Select all">
+  <input type="button" id="resetFilter" value="Clear all">
+
+  <input type="checkbox" id="cr0" name="cr" value="0" checked>
+  <label for="cr0">0</label><br>
+  
+  <input type="checkbox" id="cr1/8" name="cr" value="0.125" checked>
+  <label for="cr1/8">1/8</label><br>
+  
+  <input type="checkbox" id="cr1/4" name="cr" value="0.25" checked>
+  <label for="cr1/4">1/4</label><br>
+  
+  <input type="checkbox" id="cr1/2" name="cr" value="0.5" checked>
+  <label for="cr1/2">1/2</label><br>
+  
+  <input type="checkbox" id="cr1" name="cr" value="1" checked>
+  <label for="cr1">1</label><br>
+  
+  <input type="checkbox" id="cr2" name="cr" value="2" checked>
+  <label for="cr2">2</label><br>
+  
+  <input type="checkbox" id="cr3" name="cr" value="3" checked>
+  <label for="cr3">3</label><br>
+  
+  <input type="checkbox" id="cr4" name="cr" value="4" checked>
+  <label for="cr4">4</label><br>
+  
+  <input type="checkbox" id="cr5" name="cr" value="5" checked>
+  <label for="cr5">5</label><br>
+  
+  <input type="checkbox" id="cr6" name="cr" value="6" checked>
+  <label for="cr6">6</label><br>
+  
+  <input type="checkbox" id="cr7" name="cr" value="7" checked>
+  <label for="cr7">7</label><br>
+  
+  <input type="checkbox" id="cr8" name="cr" value="8" checked>
+  <label for="cr8">8</label><br>
+  
+  <input type="checkbox" id="cr9" name="cr" value="9" checked>
+  <label for="cr9">9</label><br>
+  
+  <input type="checkbox" id="cr10" name="cr" value="10" checked>
+  <label for="cr10">10</label><br>
+  
+  <input type="checkbox" id="cr11" name="cr" value="11" checked>
+  <label for="cr11">11</label><br>
+  
+  <input type="checkbox" id="cr12" name="cr" value="12" checked>
+  <label for="cr12">12</label><br>
+  
+  <input type="checkbox" id="cr13" name="cr" value="13" checked>
+  <label for="cr13">13</label><br>
+  
+  <!-- <input type="checkbox" id="cr14" name="cr" value="14" checked>
+  <label for="cr14">14</label><br>
+  
+  <input type="checkbox" id="cr15" name="cr" value="15" checked>
+  <label for="cr15">15</label><br>
+  
+  <input type="checkbox" id="cr16" name="cr" value="16" checked>
+  <label for="cr16">16</label><br> -->
+
+  
+  <input type="button" id="filter" value="Apply">
+</form>
+  </div>
+
+
+<h2 id="monsterList">Monster List</h2>
+<div id="monsterGrid">
+  <table id="listTable">
+    <tr>
+      <th>Name</th>
+      <th>CR</th>
+      <th>XP</th>
+    </tr>
+  </table>
+</div>
+
+
+<h2 id="selectedList">Selected Monsters</h2>
+<div id="selectedGrid">
+  <table id="selectedTable">
+    <tr>
+      <th>Name</th>
+      <th>CR</th>
+      <th>XP</th>
+      <th class="monsterNumber">Amount</th>
+      <th id="removeColumn"></th>
+    </tr>
+  </table>
+</div>
+  
+
+<div id="xpCalc">
+  <h3>Total XP: </h3>
+  <p id="totalXP">0</p>
+  <h3>Adjusted XP:</h3>
+  <p id="adjustedXP">0</p>
+</div>
+</div>
+<!-- partial -->
+
+<script src="scripts/script.js" type="module"></script>
+<script src="scripts/monsterList.js" type="module"></script>
+
+</body>
+</html>
