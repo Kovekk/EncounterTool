@@ -1,4 +1,4 @@
-import monsterList from "./monsterList.js";
+
 // On Startup
 
 const monster_list = monsterList();
